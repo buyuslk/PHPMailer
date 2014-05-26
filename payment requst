@@ -1,0 +1,41 @@
+<script type='text/javascript'>
+//<![CDATA[
+// Auto e-mail notifier data info at http://blog.irsah.com. No changes required.
+simpleCart({checkout:{type:"SendForm",url:"http://www.irsah.com/phpmail/checkout-02.php",method:"POST", 
+currency:"LKR", 
+extra_data:{first_name:document.getElementById("first_name").value,last_name:document.getElementById("last_name").value,email:document.getElementById("email").value,phone:document.getElementById("phone").value,address:document.getElementById("address").value,postcode:document.getElementById("postcode").value,comments:document.getElementById("comments").value}}}); simpleCart.bind( 'beforeCheckout' , function( data ){ data.first_name = document.getElementById("first_name").value;data.last_name = document.getElementById("last_name").value;data.email = document.getElementById("email").value;data.phone = document.getElementById("phone").value;data.address = document.getElementById("address").value;data.postcode = document.getElementById("postcode").value;data.comments = document.getElementById("comments").value;
+
+  data.shop_name = "Buyus.lk";
+  data.shop_url = "//shoplk3.blogspot.com/"; //UPDATE url structure
+  data.shop_thankyou = "//shoplk3.blogspot.com/p/success.html"; //UPDATE url structure
+  data.shop_sendFail = "//shoplk3.blogspot.com/p/error.html "; //UPDATE url structure
+  data.shop_email = "adsihina@gmail.com"; //Your e-mail address to recieve orders
+
+  data.shop_currency = "LKR";
+  // Customize blogshop business preferences. Leave " - " (dash) if not required
+  data.shop_bizname = "Iresha lakmali"; 
+  data.shop_bizaddress = "41200 Klang, Malaysia"; 
+  data.shop_bizphone1 = "016-691 3500";  
+  data.shop_bizphone2 = "None"; 			// Add "None"(without quotes) - This line will not display in email. 
+  data.shop_bizphone3 = "016-691 3500"; 	// Add "None"(without quotes) - This line will not display in email. 
+
+  // Customize blogshop banking preferences. Leave " - " (dash) if not required
+  // DO NOT include credit/charge card numbers here
+  data.bank1 = "Bank oc Commecial"; 					// Add "None"(without quotes) - ALL BANKING NOTES will not display in email. 
+  data.bank1_acc_no = "85 100 138 14"; 
+  data.bank1_acc_name = "Iresha Lakmali";
+  data.bank2 = "None"; 						// Add "None"(without quotes) - This line BANKING NOTES will not display in email. 
+  data.bank2_acc_no = "-";   
+  data.bank2_acc_name = "-"; 
+  data.bank3 = "None"; 						// Add "None"(without quotes) - This line BANKING NOTES will not display in email. 
+  data.bank3_acc_no = "-";   
+  data.bank3_acc_name = "-";
+  // Customize blogshop additional notes. Leave " - " (dash) if not required 
+  // Additional notes to include in automated e-mail
+  data.note1 = "None"; 						// Add "None"(without quotes) - All NOTES will not display in email. 
+  data.note_detail1 = "More notes for line #2"; 
+  data.note2 = "None"; 						// Add "None"(without quotes) - This Line NOTE2 and BELOW will not display in email. 
+  data.note_detail2 = "More notes for line #4";
+});
+//]]>
+</script>
